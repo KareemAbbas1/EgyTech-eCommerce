@@ -4,6 +4,7 @@ import ShippingBadge from "../../../assets/shipping.png";
 import GuaranteedBadge from "../../../assets/guaranteed.png";
 import WarrantyBadge from "../../../assets/warranty.png";
 import NewArrivals from "./NewArrivals.js"
+import { products } from "../../../utils/_Data";
 
 const Home = () => {
   return (
@@ -17,7 +18,7 @@ const Home = () => {
       </section>
 
       {/* Badges Section */}
-      <section className="container d-flex align-items-center justify-content-between badges-section">
+      <section className="container d-flex align-items-center justify-content-between mt-2 badges-section">
         <span className="">
           <img src={ShippingBadge} alt='shipping badge' className="badges" />
           <span className="ms-3">Fast Shipping & Returns </span>

@@ -9,7 +9,7 @@ export const products = {
         color: "Black",
         brand: "Apple",
         description: "iPhone 12 Pro Max- 128GB",
-        price: $2000,
+        price: '$2000',
         rate: 5,
         state: "new arraival",
         quantity: 10,
@@ -19,14 +19,14 @@ export const products = {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
             {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
         ]
@@ -41,7 +41,7 @@ export const products = {
         color: "Black",
         brand: "Apple",
         description: "iPhone 13 Pro- 128GB",
-        price: $1800,
+        price: '$1800',
         rate: 4,
         state: "new arrival",
         quantity: 10,
@@ -51,14 +51,14 @@ export const products = {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
             {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
         ]
@@ -73,7 +73,7 @@ export const products = {
         color: "Black",
         brand: "Apple",
         description: "iPhone 12 Pro Max- 128GB",
-        price: $1500,
+        price: '$1500',
         rate: 5,
         state: "on sale",
         quantity: 10,
@@ -83,14 +83,14 @@ export const products = {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
             {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
         ]
@@ -105,7 +105,7 @@ export const products = {
         color: "White",
         brand: "Apple",
         description: "iPhone 12- 128GB",
-        price: $1200,
+        price: '$1200',
         rate: 4,
         state: "on sale",
         quantity: 10,
@@ -115,14 +115,14 @@ export const products = {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
             {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
         ]
@@ -137,7 +137,7 @@ export const products = {
         color: "Black",
         brand: "Samsung",
         description: "Galaxy Z Fold- 128GB",
-        price: $2000,
+        price: '$2000',
         rate: 5,
         state: "new arrival",
         quantity: 10,
@@ -147,14 +147,14 @@ export const products = {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
             {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
         ]
@@ -169,7 +169,7 @@ export const products = {
         color: "White",
         brand: "Samsung",
         description: "Note 3- 256GB",
-        price: $2300,
+        price: '$2300',
         rate: 4,
         state: "new arrival",
         quantity: 10,
@@ -179,14 +179,14 @@ export const products = {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
             {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
         ]
@@ -201,7 +201,7 @@ export const products = {
         color: "Black",
         brand: "Samsung",
         description: "Glaxy s20 Plus- 128GB",
-        price: $2000,
+        price: '$2000',
         rate: 5,
         state: "on sale",
         quantity: 10,
@@ -211,14 +211,14 @@ export const products = {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
             {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
         ]
@@ -233,7 +233,7 @@ export const products = {
         color: "Blue",
         brand: "Huawei",
         description: "Huawei Nova9- 128GB",
-        price: $1200,
+        price: '$1200',
         rate: 4,
         state: "on sale",
         quantity: 10,
@@ -243,14 +243,14 @@ export const products = {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
             {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
         ]
@@ -265,7 +265,7 @@ export const products = {
         color: "Black",
         brand: "Huawei",
         description: "Huawei x3- 128GB",
-        price: $1000,
+        price: '$1000',
         rate: 4,
         state: "on sale",
         quantity: 10,
@@ -275,14 +275,14 @@ export const products = {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
             {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
         ]
@@ -297,7 +297,7 @@ export const products = {
         color: "Silver",
         brand: "Huawei",
         description: "Huawei p40- 256GB",
-        price: $1500,
+        price: '$1500',
         rate: 4,
         state: "on sale",
         quantity: 10,
@@ -307,14 +307,14 @@ export const products = {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
             {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
         ]
@@ -329,7 +329,7 @@ export const products = {
         color: "Black",
         brand: "Dell",
         description: "Dell SPS 15-inches",
-        price: $3000,
+        price: '$3000',
         rate: 4,
         state: "new arrival",
         quantity: 10,
@@ -339,14 +339,14 @@ export const products = {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
             {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
         ]
@@ -361,7 +361,7 @@ export const products = {
         color: "Silver",
         brand: "Dell",
         description: "Dell XPS 9500 17-inches",
-        price: $3400,
+        price: '$3400',
         rate: 5,
         state: "new arrival",
         quantity: 10,
@@ -371,14 +371,14 @@ export const products = {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
             {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
         ]
@@ -393,7 +393,7 @@ export const products = {
         color: "Black",
         brand: "Dell",
         description: "Dell G15 17-inches",
-        price: $1500,
+        price: '$1500',
         rate: 4,
         state: "on sale",
         quantity: 10,
@@ -403,14 +403,14 @@ export const products = {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
             {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
         ]
@@ -425,7 +425,7 @@ export const products = {
         color: "Silver",
         brand: "Apple",
         description: "MackBook Pro 15-inches",
-        price: $3000,
+        price: '$3000',
         rate: 5,
         state: "on sale",
         quantity: 10,
@@ -435,14 +435,14 @@ export const products = {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
             {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
         ]
@@ -457,7 +457,7 @@ export const products = {
         color: "Black",
         brand: "Apple",
         description: "MacBook Air 17-inches",
-        price: $2800,
+        price: '$2800',
         rate: 4,
         state: "on sale",
         quantity: 10,
@@ -467,14 +467,14 @@ export const products = {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
             {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
         ]
@@ -489,7 +489,7 @@ export const products = {
         color: "White",
         brand: "Apple",
         description: "MacBook Air 15-inches",
-        price: $2000,
+        price: '$2000',
         rate: 4,
         state: "on sale",
         quantity: 10,
@@ -499,14 +499,14 @@ export const products = {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
             {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
         ]
@@ -521,7 +521,7 @@ export const products = {
         color: "Silver",
         brand: "HP",
         description: "HP gw8000 15-inches",
-        price: $1800,
+        price: '$1800',
         rate: 4,
         state: "on sale",
         quantity: 10,
@@ -531,14 +531,14 @@ export const products = {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
             {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
         ]
@@ -553,7 +553,7 @@ export const products = {
         color: "Balck",
         brand: "HP",
         description: "HP dw5000 17-inches",
-        price: $2300,
+        price: '$2300',
         rate: 4,
         state: "on sale",
         quantity: 10,
@@ -563,14 +563,14 @@ export const products = {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
             {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
         ]
@@ -585,7 +585,7 @@ export const products = {
         color: "White",
         brand: "HP",
         description: "HP dw3596 15-inches",
-        price: $2300,
+        price: '$2300',
         rate: 4,
         state: "on sale",
         quantity: 10,
@@ -595,14 +595,14 @@ export const products = {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
             {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
         ]
@@ -617,7 +617,7 @@ export const products = {
         color: "Grey",
         brand: "HP",
         description: "HP dw300 17-inches",
-        price: $1800,
+        price: '$1800',
         rate: 4,
         state: "on sale",
         quantity: 10,
@@ -627,14 +627,14 @@ export const products = {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
             {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
         ]
@@ -649,7 +649,7 @@ export const products = {
         color: "Silver",
         brand: "Apple",
         description: "iPad Pro 12.9in, 256GB, Wi-Fi",
-        price: $2800,
+        price: '$2800',
         rate: 4,
         state: "on sale",
         quantity: 10,
@@ -659,14 +659,14 @@ export const products = {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
             {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
         ]
@@ -681,7 +681,7 @@ export const products = {
         color: "White",
         brand: "Samsung",
         description: "Galaxy Tab s7 + 5G(SM-T976B) - 256GB",
-        price: $2800,
+        price: '$2800',
         rate: 4,
         state: "",
         quantity: 10,
@@ -691,14 +691,14 @@ export const products = {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
             {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
         ]
@@ -713,7 +713,7 @@ export const products = {
         color: "Grey",
         brand: "Huawei",
         description: "Huawei MediaPad T10 2GB/32GB- 9.7 inches",
-        price: $1800,
+        price: '$1800',
         rate: 4,
         state: "on sale",
         quantity: 10,
@@ -723,14 +723,14 @@ export const products = {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
             {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
         ]
@@ -745,7 +745,7 @@ export const products = {
         color: "Silver",
         brand: "Huawei",
         description: "Huawei MediaPad T5 2GB/32GB- 7 inches",
-        price: $1800,
+        price: '$1800',
         rate: 4,
         state: "",
         quantity: 10,
@@ -755,14 +755,14 @@ export const products = {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
             {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
         ]
@@ -777,7 +777,7 @@ export const products = {
         color: "Silver",
         brand: "Huawei",
         description: "Huawei MatePad Pro 5G- High-End",
-        price: $2800,
+        price: '$2800',
         rate: 5,
         state: "new arrival",
         quantity: 10,
@@ -787,14 +787,14 @@ export const products = {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
             {
                 userName: "",
                 avatar: "",
                 rate: 0,
-                datae: 00/00/000,
+                date: '00/00/000',
                 comment: ""
             },
         ]

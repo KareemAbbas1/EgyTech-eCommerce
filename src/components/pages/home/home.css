@@ -22,6 +22,7 @@
 .badges-section {
     width: 100vw;
     height: 17vh;
+    font-weight: bold;
 }
 
 .badges {
@@ -35,4 +36,17 @@
 }
 
 
-/* New Arrivals Section */ 
+/* New Arrivals Section */
+.new-arrivals {
+    border: 1px solid;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-weight: 400;
+}
+
+.h-line {
+    width: 41%;
+    border: 1px solid #000000;
+}
