@@ -1,0 +1,38 @@
+/* Banner Styles */
+.banner {
+    max-width: 100vw;
+    height: 85vh;
+    top: 0;
+    left: 0;
+    background: url(../../../assets/banner.jpg);
+    opacity: 90%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.shop-now {
+    margin-top: 0.5rem;
+    min-width: 130px;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* Badges Section */
+.badges-section {
+    width: 100vw;
+    height: 17vh;
+}
+
+.badges {
+    width: 45px;
+    height: auto;
+}
+
+.vertical-line {
+    border-left: 2px solid #C9C6C6;
+    height: 4.5rem;
+}
+
+
+/* New Arrivals Section */ 
