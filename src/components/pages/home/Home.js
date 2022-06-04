@@ -5,6 +5,7 @@ import GuaranteedBadge from "../../../assets/guaranteed.png";
 import WarrantyBadge from "../../../assets/warranty.png";
 import NewArrivals from "./NewArrivals.js"
 import { products } from "../../../utils/_Data";
+import OnSale from "./OnSale";
 
 const Home = () => {
   return (
@@ -44,12 +45,16 @@ const Home = () => {
       {/* New Arrivals Section */}
       <NewArrivals products={products} />
 
+      {/* Sub Hero */}
       <section className="sub-hero d-flex align-items-center">
         <Container className="d-grid justify-content-end">
           <h1>The largest community <br />of tech enthusiasts</h1>
           <Button className="register">Register</Button>
         </Container>
       </section>
+
+      {/* On Sale */}
+      <OnSale products={products}/>
     </div>
   )
 }
