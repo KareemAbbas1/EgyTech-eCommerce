@@ -50,3 +50,74 @@
     width: 41%;
     border: 1px solid #000000;
 }
+
+.new-arrivals-products {
+    width: 100vw;
+    height: 75vh;
+}
+
+.grid-col {
+    width: 49.5%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.new-arrival-grid {
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: -0.5%;
+}
+
+.new-arrival-grid li {
+    display: inline-block;
+    width: 46%;
+    height: 47%;
+    margin: 1.7%;
+    padding: 0;
+}
+
+.new-arrival-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #C9C6C6;
+    border-radius: 2%;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 100% ;
+    height: 100%;
+    object-fit: contain;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.new-arrival-card:hover .image {
+    opacity: 0.3;
+}
+
+.new-arrival-card:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: #000000;
+    color: white;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+}

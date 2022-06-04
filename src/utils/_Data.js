@@ -1,328 +1,8 @@
 export const products = {
-    "3snrnk5r0sf5yu6ttaifkp": {
-        id: "3snrnk5r0sf5yu6ttaifkp",
-        images: [
-            "https://ijunkie.com/wp-content/uploads/2020/10/frontiphone12.jpg"
-        ],
-        type: "mobile",
-        name: "iPhone 12 Pro",
-        color: "Black",
-        brand: "Apple",
-        description: "iPhone 12 Pro Max- 128GB",
-        price: '$2000',
-        rate: 5,
-        state: "new arraival",
-        quantity: 10,
-        productDetails: "proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin sed libero enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa placerat",
-        reviews: [
-            {
-                userName: "",
-                avatar: "",
-                rate: 0,
-                date: '00/00/000',
-                comment: ""
-            },
-            {
-                userName: "",
-                avatar: "",
-                rate: 0,
-                date: '00/00/000',
-                comment: ""
-            },
-        ]
-    },
-    "ryfzc8tyxdc95ei8efof4t": {
-        id: "ryfzc8tyxdc95ei8efof4t",
-        images: [
-            "https://cdn.arstechnica.net/wp-content/uploads/2019/09/iPhone-11-Pro-Max-front-hand-1-640x443.jpg"
-        ],
-        type: "mobile",
-        name: "iPhone 13 Pro",
-        color: "Black",
-        brand: "Apple",
-        description: "iPhone 13 Pro- 128GB",
-        price: '$1800',
-        rate: 4,
-        state: "new arrival",
-        quantity: 10,
-        productDetails: "proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin sed libero enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa placerat",
-        reviews: [
-            {
-                userName: "",
-                avatar: "",
-                rate: 0,
-                date: '00/00/000',
-                comment: ""
-            },
-            {
-                userName: "",
-                avatar: "",
-                rate: 0,
-                date: '00/00/000',
-                comment: ""
-            },
-        ]
-    },
-    "o1kuodedpzb8d8xwmd0hfa": {
-        id: "o1kuodedpzb8d8xwmd0hfa",
-        images: [
-            "https://www.gizbot.com/images/2020-05/apple-iphone-12-pro-iphone-12-pro-max-3rd-party-renders_158935493900.jpg"
-        ],
-        type: "mobile",
-        name: "iPhone 12 Pro Max",
-        color: "Black",
-        brand: "Apple",
-        description: "iPhone 12 Pro Max- 128GB",
-        price: '$1500',
-        rate: 5,
-        state: "on sale",
-        quantity: 10,
-        productDetails: "proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin sed libero enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa placerat",
-        reviews: [
-            {
-                userName: "",
-                avatar: "",
-                rate: 0,
-                date: '00/00/000',
-                comment: ""
-            },
-            {
-                userName: "",
-                avatar: "",
-                rate: 0,
-                date: '00/00/000',
-                comment: ""
-            },
-        ]
-    },
-    "su1zfd8bkdngrcxncpnffo": {
-        id: "su1zfd8bkdngrcxncpnffo",
-        images: [
-            "https://www.apple.com/newsroom/images/product/iphone/standard/apple_iphone-12_ios-14-springboard_10132020_carousel.jpg.large.jpg"
-        ],
-        type: "mobile",
-        name: "iPhone 12",
-        color: "White",
-        brand: "Apple",
-        description: "iPhone 12- 128GB",
-        price: '$1200',
-        rate: 4,
-        state: "on sale",
-        quantity: 10,
-        productDetails: "proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin sed libero enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa placerat",
-        reviews: [
-            {
-                userName: "",
-                avatar: "",
-                rate: 0,
-                date: '00/00/000',
-                comment: ""
-            },
-            {
-                userName: "",
-                avatar: "",
-                rate: 0,
-                date: '00/00/000',
-                comment: ""
-            },
-        ]
-    },
-    "lpfovekh9hl3n0eoziq8qh": {
-        id: "lpfovekh9hl3n0eoziq8qh",
-        images: [
-            "https://images.samsung.com/is/image/samsung/eg/galaxy-note20/gallery/eg-galaxy-z-fold2-f916-sm-f916bznqegy-frontmysticbronze-thumb-274061201?$264_264_PNG$"
-        ],
-        type: "mobile",
-        name: "Galaxy Z Fold",
-        color: "Black",
-        brand: "Samsung",
-        description: "Galaxy Z Fold- 128GB",
-        price: '$2000',
-        rate: 5,
-        state: "new arrival",
-        quantity: 10,
-        productDetails: "proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin sed libero enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa placerat",
-        reviews: [
-            {
-                userName: "",
-                avatar: "",
-                rate: 0,
-                date: '00/00/000',
-                comment: ""
-            },
-            {
-                userName: "",
-                avatar: "",
-                rate: 0,
-                date: '00/00/000',
-                comment: ""
-            },
-        ]
-    },
-    "vwnpawa4rm4tmvs056q": {
-        id: "vwnpawa4rm4tmvs056q",
-        images: [
-            "https://g8x5q8g4.rocketcdn.me/wp-content/uploads/2022/05/Samsung-A53-.jpg"
-        ],
-        type: "mobile",
-        name: "Note 3",
-        color: "White",
-        brand: "Samsung",
-        description: "Note 3- 256GB",
-        price: '$2300',
-        rate: 4,
-        state: "new arrival",
-        quantity: 10,
-        productDetails: "proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin sed libero enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa placerat",
-        reviews: [
-            {
-                userName: "",
-                avatar: "",
-                rate: 0,
-                date: '00/00/000',
-                comment: ""
-            },
-            {
-                userName: "",
-                avatar: "",
-                rate: 0,
-                date: '00/00/000',
-                comment: ""
-            },
-        ]
-    },
-    "4isgbwnowldyut0dkzf8g": {
-        id: "4isgbwnowldyut0dkzf8g",
-        images: [
-            "https://images.samsung.com/is/image/samsung/eg-galaxy-s20-plus-sm-g985-sm-g985fzkdegy-frontcosmicblack-213734550?$PD_SHOP_MAIN$"
-        ],
-        type: "mobile",
-        name: "Galaxy s20 Plus",
-        color: "Black",
-        brand: "Samsung",
-        description: "Glaxy s20 Plus- 128GB",
-        price: '$2000',
-        rate: 5,
-        state: "on sale",
-        quantity: 10,
-        productDetails: "proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin sed libero enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa placerat",
-        reviews: [
-            {
-                userName: "",
-                avatar: "",
-                rate: 0,
-                date: '00/00/000',
-                comment: ""
-            },
-            {
-                userName: "",
-                avatar: "",
-                rate: 0,
-                date: '00/00/000',
-                comment: ""
-            },
-        ]
-    },
-    "4edn9i3rwu682ui3qgjh4h": {
-        id: "4edn9i3rwu682ui3qgjh4h",
-        images: [
-            "https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/admin-image/phones/nova9-se/list/list-blue.png"
-        ],
-        type: "mobile",
-        name: "Huawei Nova9",
-        color: "Blue",
-        brand: "Huawei",
-        description: "Huawei Nova9- 128GB",
-        price: '$1200',
-        rate: 4,
-        state: "on sale",
-        quantity: 10,
-        productDetails: "proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin sed libero enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa placerat",
-        reviews: [
-            {
-                userName: "",
-                avatar: "",
-                rate: 0,
-                date: '00/00/000',
-                comment: ""
-            },
-            {
-                userName: "",
-                avatar: "",
-                rate: 0,
-                date: '00/00/000',
-                comment: ""
-            },
-        ]
-    },
-    "y39upfvrg6nwp6vk7i4q6m": {
-        id: "y39upfvrg6nwp6vk7i4q6m",
-        images: [
-            "https://consumer-img.huawei.com/content/dam/huawei-cbg-site/common/mkt/plp/phones/new-phones/series-products/y62019-black.png"
-        ],
-        type: "mobile",
-        name: "Huawei x3",
-        color: "Black",
-        brand: "Huawei",
-        description: "Huawei x3- 128GB",
-        price: '$1000',
-        rate: 4,
-        state: "on sale",
-        quantity: 10,
-        productDetails: "proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin sed libero enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa placerat",
-        reviews: [
-            {
-                userName: "",
-                avatar: "",
-                rate: 0,
-                date: '00/00/000',
-                comment: ""
-            },
-            {
-                userName: "",
-                avatar: "",
-                rate: 0,
-                date: '00/00/000',
-                comment: ""
-            },
-        ]
-    },
-    "acwsk57b9dm6o0kck7cvvt": {
-        id: "acwsk57b9dm6o0kck7cvvt",
-        images: [
-            "https://consumer-img.huawei.com/content/dam/huawei-cbg-site/common/mkt/plp/phones/new-phones/series-products/p40-silver.png"
-        ],
-        type: "mobile",
-        name: "Huawei",
-        color: "Silver",
-        brand: "Huawei",
-        description: "Huawei p40- 256GB",
-        price: '$1500',
-        rate: 4,
-        state: "on sale",
-        quantity: 10,
-        productDetails: "proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin sed libero enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa placerat",
-        reviews: [
-            {
-                userName: "",
-                avatar: "",
-                rate: 0,
-                date: '00/00/000',
-                comment: ""
-            },
-            {
-                userName: "",
-                avatar: "",
-                rate: 0,
-                date: '00/00/000',
-                comment: ""
-            },
-        ]
-    },
     "zpma5agmwdiyv8k8uuk9a": {
         id: "zpma5agmwdiyv8k8uuk9a",
         images: [
-            "https://www.evetech.co.za/repository/ProductImages/gaming-laptop-best-deals-banner-v1.png"
+            "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/xps-15-9520/spi/black/ng/notebook-xps-15-9520-black-campaign-hero-504x350-ng.psd?fmt=jpg&wid=570&hei=400"
         ],
         type: "laptop",
         name: "Dell XPS",
@@ -618,6 +298,326 @@ export const products = {
         brand: "HP",
         description: "HP dw300 17-inches",
         price: '$1800',
+        rate: 4,
+        state: "on sale",
+        quantity: 10,
+        productDetails: "proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin sed libero enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa placerat",
+        reviews: [
+            {
+                userName: "",
+                avatar: "",
+                rate: 0,
+                date: '00/00/000',
+                comment: ""
+            },
+            {
+                userName: "",
+                avatar: "",
+                rate: 0,
+                date: '00/00/000',
+                comment: ""
+            },
+        ]
+    },
+    "3snrnk5r0sf5yu6ttaifkp": {
+        id: "3snrnk5r0sf5yu6ttaifkp",
+        images: [
+            "https://alarm-stores.com/wp-content/uploads/2020/10/iphone-12-pro-blue-hero.png"
+        ],
+        type: "mobile",
+        name: "iPhone 12 Pro",
+        color: "Black",
+        brand: "Apple",
+        description: "iPhone 12 Pro Max- 128GB",
+        price: '$2000',
+        rate: 5,
+        state: "new arrival",
+        quantity: 10,
+        productDetails: "proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin sed libero enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa placerat",
+        reviews: [
+            {
+                userName: "",
+                avatar: "",
+                rate: 0,
+                date: '00/00/000',
+                comment: ""
+            },
+            {
+                userName: "",
+                avatar: "",
+                rate: 0,
+                date: '00/00/000',
+                comment: ""
+            },
+        ]
+    },
+    "ryfzc8tyxdc95ei8efof4t": {
+        id: "ryfzc8tyxdc95ei8efof4t",
+        images: [
+            "https://assets.swappie.com/cdn-cgi/image/width=600,height=600,fit=contain,format=auto/swappie-iphone-13-pro-sierra-blue-back.png"
+        ],
+        type: "mobile",
+        name: "iPhone 13 Pro",
+        color: "Black",
+        brand: "Apple",
+        description: "iPhone 13 Pro- 128GB",
+        price: '$1800',
+        rate: 4,
+        state: "new arrival",
+        quantity: 10,
+        productDetails: "proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin sed libero enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa placerat",
+        reviews: [
+            {
+                userName: "",
+                avatar: "",
+                rate: 0,
+                date: '00/00/000',
+                comment: ""
+            },
+            {
+                userName: "",
+                avatar: "",
+                rate: 0,
+                date: '00/00/000',
+                comment: ""
+            },
+        ]
+    },
+    "o1kuodedpzb8d8xwmd0hfa": {
+        id: "o1kuodedpzb8d8xwmd0hfa",
+        images: [
+            "https://www.gizbot.com/images/2020-05/apple-iphone-12-pro-iphone-12-pro-max-3rd-party-renders_158935493900.jpg"
+        ],
+        type: "mobile",
+        name: "iPhone 12 Pro Max",
+        color: "Black",
+        brand: "Apple",
+        description: "iPhone 12 Pro Max- 128GB",
+        price: '$1500',
+        rate: 5,
+        state: "on sale",
+        quantity: 10,
+        productDetails: "proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin sed libero enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa placerat",
+        reviews: [
+            {
+                userName: "",
+                avatar: "",
+                rate: 0,
+                date: '00/00/000',
+                comment: ""
+            },
+            {
+                userName: "",
+                avatar: "",
+                rate: 0,
+                date: '00/00/000',
+                comment: ""
+            },
+        ]
+    },
+    "su1zfd8bkdngrcxncpnffo": {
+        id: "su1zfd8bkdngrcxncpnffo",
+        images: [
+            "https://www.apple.com/newsroom/images/product/iphone/standard/apple_iphone-12_ios-14-springboard_10132020_carousel.jpg.large.jpg"
+        ],
+        type: "mobile",
+        name: "iPhone 12",
+        color: "White",
+        brand: "Apple",
+        description: "iPhone 12- 128GB",
+        price: '$1200',
+        rate: 4,
+        state: "on sale",
+        quantity: 10,
+        productDetails: "proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin sed libero enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa placerat",
+        reviews: [
+            {
+                userName: "",
+                avatar: "",
+                rate: 0,
+                date: '00/00/000',
+                comment: ""
+            },
+            {
+                userName: "",
+                avatar: "",
+                rate: 0,
+                date: '00/00/000',
+                comment: ""
+            },
+        ]
+    },
+    "lpfovekh9hl3n0eoziq8qh": {
+        id: "lpfovekh9hl3n0eoziq8qh",
+        images: [
+            "https://images.samsung.com/is/image/samsung/eg/galaxy-note20/gallery/eg-galaxy-z-fold2-f916-sm-f916bznqegy-frontmysticbronze-thumb-274061201?$264_264_PNG$"
+        ],
+        type: "mobile",
+        name: "Galaxy Z Fold",
+        color: "Black",
+        brand: "Samsung",
+        description: "Galaxy Z Fold- 128GB",
+        price: '$2000',
+        rate: 5,
+        state: "new arrival",
+        quantity: 10,
+        productDetails: "proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin sed libero enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa placerat",
+        reviews: [
+            {
+                userName: "",
+                avatar: "",
+                rate: 0,
+                date: '00/00/000',
+                comment: ""
+            },
+            {
+                userName: "",
+                avatar: "",
+                rate: 0,
+                date: '00/00/000',
+                comment: ""
+            },
+        ]
+    },
+    "vwnpawa4rm4tmvs056q": {
+        id: "vwnpawa4rm4tmvs056q",
+        images: [
+            "https://g8x5q8g4.rocketcdn.me/wp-content/uploads/2022/05/Samsung-A53-.jpg"
+        ],
+        type: "mobile",
+        name: "Note 3",
+        color: "White",
+        brand: "Samsung",
+        description: "Note 3- 256GB",
+        price: '$2300',
+        rate: 4,
+        state: "new arrival",
+        quantity: 10,
+        productDetails: "proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin sed libero enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa placerat",
+        reviews: [
+            {
+                userName: "",
+                avatar: "",
+                rate: 0,
+                date: '00/00/000',
+                comment: ""
+            },
+            {
+                userName: "",
+                avatar: "",
+                rate: 0,
+                date: '00/00/000',
+                comment: ""
+            },
+        ]
+    },
+    "4isgbwnowldyut0dkzf8g": {
+        id: "4isgbwnowldyut0dkzf8g",
+        images: [
+            "https://images.samsung.com/is/image/samsung/eg-galaxy-s20-plus-sm-g985-sm-g985fzkdegy-frontcosmicblack-213734550?$PD_SHOP_MAIN$"
+        ],
+        type: "mobile",
+        name: "Galaxy s20 Plus",
+        color: "Black",
+        brand: "Samsung",
+        description: "Glaxy s20 Plus- 128GB",
+        price: '$2000',
+        rate: 5,
+        state: "on sale",
+        quantity: 10,
+        productDetails: "proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin sed libero enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa placerat",
+        reviews: [
+            {
+                userName: "",
+                avatar: "",
+                rate: 0,
+                date: '00/00/000',
+                comment: ""
+            },
+            {
+                userName: "",
+                avatar: "",
+                rate: 0,
+                date: '00/00/000',
+                comment: ""
+            },
+        ]
+    },
+    "4edn9i3rwu682ui3qgjh4h": {
+        id: "4edn9i3rwu682ui3qgjh4h",
+        images: [
+            "https://consumer.huawei.com/content/dam/huawei-cbg-site/common/mkt/pdp/admin-image/phones/nova9-se/list/list-blue.png"
+        ],
+        type: "mobile",
+        name: "Huawei Nova9",
+        color: "Blue",
+        brand: "Huawei",
+        description: "Huawei Nova9- 128GB",
+        price: '$1200',
+        rate: 4,
+        state: "on sale",
+        quantity: 10,
+        productDetails: "proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin sed libero enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa placerat",
+        reviews: [
+            {
+                userName: "",
+                avatar: "",
+                rate: 0,
+                date: '00/00/000',
+                comment: ""
+            },
+            {
+                userName: "",
+                avatar: "",
+                rate: 0,
+                date: '00/00/000',
+                comment: ""
+            },
+        ]
+    },
+    "y39upfvrg6nwp6vk7i4q6m": {
+        id: "y39upfvrg6nwp6vk7i4q6m",
+        images: [
+            "https://consumer-img.huawei.com/content/dam/huawei-cbg-site/common/mkt/plp/phones/new-phones/series-products/y62019-black.png"
+        ],
+        type: "mobile",
+        name: "Huawei x3",
+        color: "Black",
+        brand: "Huawei",
+        description: "Huawei x3- 128GB",
+        price: '$1000',
+        rate: 4,
+        state: "on sale",
+        quantity: 10,
+        productDetails: "proin sagittis nisl rhoncus mattis rhoncus urna neque viverra justo nec ultrices dui sapien eget mi proin sed libero enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt augue interdum velit euismod in pellentesque massa placerat",
+        reviews: [
+            {
+                userName: "",
+                avatar: "",
+                rate: 0,
+                date: '00/00/000',
+                comment: ""
+            },
+            {
+                userName: "",
+                avatar: "",
+                rate: 0,
+                date: '00/00/000',
+                comment: ""
+            },
+        ]
+    },
+    "acwsk57b9dm6o0kck7cvvt": {
+        id: "acwsk57b9dm6o0kck7cvvt",
+        images: [
+            "https://consumer-img.huawei.com/content/dam/huawei-cbg-site/common/mkt/plp/phones/new-phones/series-products/p40-silver.png"
+        ],
+        type: "mobile",
+        name: "Huawei",
+        color: "Silver",
+        brand: "Huawei",
+        description: "Huawei p40- 256GB",
+        price: '$1500',
         rate: 4,
         state: "on sale",
         quantity: 10,

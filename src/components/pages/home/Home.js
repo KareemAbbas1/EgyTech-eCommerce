@@ -42,7 +42,7 @@ const Home = () => {
       </section>
 
       {/* New Arrivals Section */}
-      <NewArrivals />
+      <NewArrivals products={products} />
     </div>
   )
 }
