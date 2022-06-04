@@ -43,6 +43,13 @@ const Home = () => {
 
       {/* New Arrivals Section */}
       <NewArrivals products={products} />
+
+      <section className="sub-hero d-flex align-items-center">
+        <Container className="d-grid justify-content-end">
+          <h1>The largest community <br />of tech enthusiasts</h1>
+          <Button className="register">Register</Button>
+        </Container>
+      </section>
     </div>
   )
 }
