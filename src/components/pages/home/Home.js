@@ -6,6 +6,7 @@ import WarrantyBadge from "../../../assets/warranty.png";
 import NewArrivals from "./NewArrivals.js"
 import { products } from "../../../utils/_Data";
 import OnSale from "./OnSale";
+import Brands from "./Brands";
 
 const Home = () => {
   return (
@@ -55,6 +56,9 @@ const Home = () => {
 
       {/* On Sale */}
       <OnSale products={products}/>
+
+      {/* Brands */}
+      <Brands />
     </div>
   )
 }

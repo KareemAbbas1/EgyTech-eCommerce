@@ -5,7 +5,6 @@ import NewArrivalCard from "./NewArrivalCard";
 
 
 const NewArrivals = ({ products }) => {
-    // console.log(products)
 
     const [newArrivals, setNewArrivals] = useState();
     const [newestProduct, setNewestProduct] = useState();
@@ -17,11 +16,11 @@ const NewArrivals = ({ products }) => {
             setTimeout(() => {
                 const productsArray = Object.keys(products).map(key => {
                     return products[key];
-                })
+                });
 
                 const newProductsArray = productsArray.filter(p => {
                     return p.state === "new arrival"
-                })
+                });
 
                 const firstProduct = newProductsArray.shift();
                 setNewestProduct(firstProduct);
@@ -29,7 +28,7 @@ const NewArrivals = ({ products }) => {
                 const newProducts = newProductsArray.slice(1, 5);
                 setNewArrivals(newProducts);
 
-            }, 100)
+            }, 100);
         }
         handleNewArrivals();
     }, []);

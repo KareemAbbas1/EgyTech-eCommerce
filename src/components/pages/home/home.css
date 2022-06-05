@@ -141,7 +141,7 @@
     color: #fff;
 }
 
-/* On Sale */
+/* On Sale Section */
 .on-sale {
     font-size: 2.5rem;
     font-weight: 400;
@@ -150,4 +150,20 @@
 .h-line-onSale {
     width: 43%;
     border: 1px solid #000000;
+}
+
+.products-grid {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Brands Section */
+.brands {
+    max-width: 100vw;
+    height: 100vh;
+    background: #0F1010;
 }
