@@ -1,0 +1,17 @@
+.star-rating{
+  position :absolute;
+  top:0; left: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 999;
+
+}
+  .on {
+    color: rgb(239, 204, 7);
+  }
+  .off {
+    color: rgb(68, 66, 66);
+  }
+ 

@@ -2,11 +2,12 @@ import { Card, Button } from "react-bootstrap";
 
 
 
-const ProductCard = () => {
+const ProductCard = ( {rating}) => {
     return (
         <div className="d-flex gap-3 mt-5 mb-5">
             <Card style={{ minWidth: '15rem' }}>
-                <a href="#">
+                <a href="#" >
+                {rating}
                     <Card.Img variant="top" src="https://alarm-stores.com/wp-content/uploads/2020/10/iphone-12-pro-blue-hero.png"
                         style={{
                             minHeight: "17rem",
@@ -14,6 +15,7 @@ const ProductCard = () => {
                             objectFit: 'cover',
                             borderBottom: '1px solid #C9C6C6'
                         }} />
+                        
                 </a>
                 <Card.Body>
                     <Card.Text style={{ fontSize: '0.9rem' }}>
