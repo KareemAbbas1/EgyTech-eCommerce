@@ -1,6 +1,6 @@
 import React from 'react'
-import { Container, Nav, Navbar, Offcanvas, Button, Form, FormControl } from 'react-bootstrap';
-import { Search, Cart3 } from 'react-bootstrap-icons';
+import { Container, Nav, Navbar, Offcanvas, Button, Form, FormControl, DropdownButton } from 'react-bootstrap';
+import { Search, Cart3, Person } from 'react-bootstrap-icons';
 import './navbar.css';
 import { useState, useEffect } from 'react';
 import logo from '../../assets/Logo.png';
@@ -40,28 +40,33 @@ const NavBar = () => {
             expand='lg'
             className={`nav ${showNavbar && 'showNavOnscroll'} d-flex`}
         >
-            <Container fluid>
+            <Container fluid className='nav-container'>
                 <Navbar.Brand href='#'><img src={logo} alt='logo image'></img></Navbar.Brand>
-                <Navbar.Toggle aria-controls='offcanvasNavbar-expand' className='bg-primary' />
-                <Navbar.Offcanvas
-                    id='offcanvasNavbar-expand'
-                    aria-labelledby='offcanvasNavbarLabel-expand'
-                    placement='end'
-                >
-                    <Offcanvas.Header closeButton>
-                        <Offcanvas.Title id='offcanvasNavbarLabel-expand'>
-                            Menu
-                        </Offcanvas.Title>
-                    </Offcanvas.Header>
-                    <Offcanvas.Body>
-                        <Nav className='justify-content-center flex-grow-1 nav-links'>
-                            <Nav.Link href='#' className='mx-4'><text>NavLink</text></Nav.Link>
-                            <Nav.Link href='#' className='mx-4'><text>NavLink</text></Nav.Link>
-                            <Nav.Link href='#' className='mx-4'><text>NavLink</text></Nav.Link>
-                            <Nav.Link href='#' className='mx-4'><text>NavLink</text></Nav.Link>
-                            <Nav.Link href='#' className='mx-4'><text>NavLink</text></Nav.Link>
-                        </Nav>
-                        <Form className=''>
+                <span className='d-flex justify-content-between' style={{ minWidth: '79vw' }}>
+                    <span>
+                        <Navbar.Toggle aria-controls='offcanvasNavbar-expand' className='bg-primary offcanvasToggler' />
+                        <Navbar.Offcanvas
+                            id='offcanvasNavbar-expand'
+                            aria-labelledby='offcanvasNavbarLabel-expand'
+                        >
+                            <Offcanvas.Header closeButton>
+                                <Offcanvas.Title id='offcanvasNavbarLabel-expand'>
+                                    Menu
+                                </Offcanvas.Title>
+                            </Offcanvas.Header>
+                            <Offcanvas.Body style={{maxWidht: '80vw'}}>
+                                <Nav className='justify-content-center flex-grow-1 nav-links'>
+                                    <Nav.Link href='#' className='mx-4'><text>Mobile Phones</text></Nav.Link>
+                                    <Nav.Link href='#' className='mx-4'><text>Computers</text></Nav.Link>
+                                    <Nav.Link href='#' className='mx-4'><text>Tablets</text></Nav.Link>
+                                    <Nav.Link href='#' className='mx-4'><text>About us</text></Nav.Link>
+                                    <Nav.Link href='#' className='mx-4'><text>Contact us</text></Nav.Link>
+                                </Nav>
+                            </Offcanvas.Body>
+                        </Navbar.Offcanvas>
+                    </span>
+                    <span className='d-flex icons-container'>
+                        <Form>
                             <FormControl
                                 type='search'
                                 placeholder='Search Products'
@@ -70,91 +75,20 @@ const NavBar = () => {
                             />
                         </Form>
                         <button className='icons' onClick={() => toggleSearchbar()}>
-                            <Search color='#28CC9E' size={30} className='mt-1 me-2' />
+                            <Search color='#28CC9E' size={25} className='me-2' />
                         </button>
                         <button className='icons'>
-                            <Cart3 color='#28CC9E' size={30} className='mt-1 me-3' />
+                            <Cart3 color='#28CC9E' size={25} className='me-2' />
                         </button>
-                        <Button variant='outline-primary p-0 login-btn'>Log in</Button>
-                    </Offcanvas.Body>
-                </Navbar.Offcanvas>
+                        <Button variant='outline-primary' className='p-0 login-btn'>Log in</Button>
+                        <button className='icons login-icon'>
+                            <Person color="#28CC9e" size={31} calssName='me-3' />
+                        </button>
+                    </span>
+                </span>
             </Container>
         </Navbar>
     )
 }
 
 export default NavBar
-
-
-
-/* <Navbar key='expand' bg='dark' expand='lg' className='mb-3'>
-                <Container fluid>
-                    <Navbar.Brand href='#'><img src={logo} alt='logo image' style={{width: '50px'}}></img></Navbar.Brand>
-                    <Navbar.Toggle aria-controls='offcanvasNavbar-expand' className='bg-primary' />
-                    <Navbar.Offcanvas
-                        id='offcanvasNavbar-expand'
-                        aria-labelledby='offcanvasNavbarLabel-expand'
-                        placement='end'
-                    >
-                        <Offcanvas.Header closeButton className='bg-dark bg-opacity-75'>
-                            <Offcanvas.Title id='offcanvasNavbarLabel-expand' className='text-white'>
-                                Menu
-                            </Offcanvas.Title>
-                        </Offcanvas.Header>
-                        <Offcanvas.Body className='bg-dark bg-opacity-75'>
-                            <Nav className='justify-content-center flex-grow-1'>
-                                <Nav.Link href='#' className='text-white pe-5'>Home</Nav.Link>
-                                <Nav.Link href='#' className='text-white pe-5'>Link1</Nav.Link>
-                                <Nav.Link href='#' className='text-white pe-5'>Link2</Nav.Link>
-                                <Nav.Link href='#' className='text-white pe-5'>Link3</Nav.Link>
-                                <Nav.Link href='#' className='text-white'>Link4</Nav.Link>
-                            </Nav>
-                            <Form className='d-flex'>
-                                <FormControl
-                                    type='search'
-                                    placeholder='Search Products'
-                                    className='me-2'
-                                    aria-label='Search'
-                                 />
-                                 <Button variant='outline-primary'>Search</Button>
-                            </Form>
-                        </Offcanvas.Body>
-                    </Navbar.Offcanvas>
-                </Container>
-            </Navbar> */
-{/* <Navbar.Toggle aria-controls='offcanvasNavbar-expand' className='bg-primary' />
-                <div>
-                    <a className='navbar-brand' href='/'>
-                        <img src={logo} alt='logo' style={{ height: "2.7rem" }} />
-                    </a>
-                </div>
-
-                <Navbar.Offcanvas
-                    id='offcanvasNavbar-expand'
-                    aria-labelledby='offcanvasNavbarLabel-expand'
-                    placement='end'
-                >
-                    <Offcanvas.Header closeButton className='bg-dark bg-opacity-75'>
-                        <Offcanvas.Title id='offcanvasNavbarLabel-expand' className='text-white'>
-                            Menu
-                        </Offcanvas.Title>
-                    </Offcanvas.Header>
-                    <Offcanvas.Body className='bg-opacity-75'>
-                        <Nav className='d-flex align-items-center justify-content-between'>
-                            <Nav.Link href='#' className=''>NavLink</Nav.Link>
-                            <Nav.Link href='#' className=''>NavLink</Nav.Link>
-                            <Nav.Link href='#' className=''>NavLink</Nav.Link>
-                            <Nav.Link href='#' className=''>NavLink</Nav.Link>
-                            <Nav.Link href='#' className=''>NavLink</Nav.Link>
-                        </Nav>
-                        <Form className='d-flex'>
-                            <FormControl
-                                type='search'
-                                placeholder='Search Products'
-                                className='me-2'
-                                aria-label='Search'
-                            />
-                            <Button variant='outline-primary'>Search</Button>
-                        </Form>
-                    </Offcanvas.Body>
-                </Navbar.Offcanvas> */}

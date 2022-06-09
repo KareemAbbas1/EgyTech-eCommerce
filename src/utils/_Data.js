@@ -830,9 +830,9 @@ export const brands = {
     Apple: {
         name: "Apple",
         images: [
-            "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-family-hero?wid=940&hei=1112&fmt=png-alpha&.v=1645036276543",
-            "https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iphone13_hero_09142021_inline.jpg.large.jpg",
             "https://imageio.forbes.com/specials-images/imageserve/61086ec373551e86331910e3/Apple-Product-Studio-Shoot/960x0.jpg?format=jpg&width=960",
+            "http://cdn.shopify.com/s/files/1/0941/2938/products/advent_gold_luxury_titanium_metal_iphone_12_pro_case_1_800x.jpg?v=1639579469",
+            "https://www.apple.com/newsroom/images/product/iphone/standard/Apple_iphone13_hero_09142021_inline.jpg.large.jpg",
             "https://cdn.shopify.com/s/files/1/0788/5983/products/Untitleddesign-2021-11-17T115025.283_1024x1024.png?v=1637142640",
             "https://media.wired.com/photos/607f24fc4bf3b54775c6c4b4/master/pass/Gear-Apple_iPad-Pro_Magic-Keyboard.jpg"
         ]

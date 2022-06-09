@@ -1,11 +1,13 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { useEffect, useState } from "react";
 import NewArrivalCard from "./NewArrivalCard";
+import ProductCard from "../../product card/ProductCard";
 
 
 
 const NewArrivals = ({ products }) => {
 
+    const [allNewArrivals, setAllNewArrivals] = useState();
     const [newArrivals, setNewArrivals] = useState();
     const [newestProduct, setNewestProduct] = useState();
 
@@ -21,6 +23,7 @@ const NewArrivals = ({ products }) => {
                 const newProductsArray = productsArray.filter(p => {
                     return p.state === "new arrival"
                 });
+                setAllNewArrivals(newProductsArray);
 
                 const firstProduct = newProductsArray.shift();
                 setNewestProduct(firstProduct);
@@ -32,11 +35,10 @@ const NewArrivals = ({ products }) => {
         }
         handleNewArrivals();
     }, []);
-    // console.log(newArrivals);
-    // console.log(newestProduct);
+
 
     return (
-        <section>
+        <section className="new-arrivals-section">
             <Container className="mt-4">
                 <div className="d-flex justify-content-between align-items-center">
                     <div className="h-line"></div><h3 className="new-arrivals">New Arrivals</h3><div className="h-line"></div>
@@ -58,11 +60,22 @@ const NewArrivals = ({ products }) => {
                         <ul className="new-arrival-grid">
                             {newArrivals && newArrivals.map(p => (
                                 <li key={p.id}>
-                                    <NewArrivalCard product={p}/>
+                                    <NewArrivalCard product={p} />
                                 </li>
                             ))}
                         </ul>
                     </Col>
+                </Row>
+            </Container>
+            <Container className="products-responsive-grid">
+                <Row>
+                    <ul className="d-flex gap-3" style={{listStyleType: 'none'}}>
+                                {allNewArrivals && allNewArrivals.map(p => (
+                                    <li key={p.id}>
+                                        <ProductCard product={p} />
+                                    </li>
+                                ))}
+                    </ul>
                 </Row>
             </Container>
         </section>
@@ -70,32 +83,3 @@ const NewArrivals = ({ products }) => {
 }
 
 export default NewArrivals;
-
-{/* <Row className="d-flex justify-content-between mx-1" style={{ height: '100%'}}>
-
-<Col lg={6} style={{ border: '1px solid', width: '49.3%' }}>
-
-</Col>
-
-<Col className="d-grid gap-3" lg={6} style={{width: '49.3%'}} >
-    <Row className="gap-3">
-
-        <Col style={{ border: '1px solid' }}>
-            
-        </Col>
-        <Col style={{ border: '1px solid' }}>
-            
-        </Col>
-    </Row>
-
-    <Row className="gap-3">
-        <Col style={{ border: '1px solid' }}>
-            
-        </Col>
-        <Col style={{ border: '1px solid' }}>
-            
-        </Col>
-    </Row>
-
-</Col>
-</Row> */}
