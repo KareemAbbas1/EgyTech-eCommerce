@@ -25,7 +25,7 @@ export const products = {
             },
             {
                 userName: "",
-                avatar: "",
+                avatar:  "",
                 rate: 0,
                 date: '00/00/000',
                 comment: ""

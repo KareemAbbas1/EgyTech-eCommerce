@@ -82,7 +82,7 @@ const NavBar = () => {
                         </button>
                         <Button variant='outline-primary' className='p-0 login-btn'>Log in</Button>
                         <button className='icons login-icon'>
-                            <Person color="#28CC9e" size={31} calssName='me-3' />
+                            <Person color="#28CC9e" size={31} className='me-3' />
                         </button>
                     </span>
                 </span>

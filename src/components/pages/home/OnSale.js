@@ -16,6 +16,7 @@ const OnSale = ({ products }) => {
                 const productsArray = Object.keys(products).map(key => {
                     return products[key];
                 });
+                console.log(productsArray)  
 
                 const onSaleProductsArray = productsArray.filter(p => {
                     return p.state === "on sale"

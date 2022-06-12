@@ -3,7 +3,7 @@ import "./productCard.css"
 
 
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, rating }) => {
 
     const image = product && product.images[0];
     const productName = product && product.name;
@@ -16,6 +16,8 @@ const ProductCard = ({ product }) => {
             <Card style={{ minWidth: '16.6rem' }}>
                 <div className="product-card">
                 <a href="#">
+                {rating}
+
                     <Card.Img className="image" variant="top" src={image}
                         style={{
                             minHeight: "17rem",
