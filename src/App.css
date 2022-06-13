@@ -1,0 +1,13 @@
+
+a.authLink:hover {
+text-decoration: underline !important;
+}
+.form-control.is-valid:focus {
+  box-shadow: 0 0 0 0.25rem rgba(36, 196, 84, 0.5);
+}
+.fieldInvalidFeedback.invalid-feedback {
+color: #ee8690;
+}
+#backBtn:hover {
+  background-color: #28CC9E;
+}
