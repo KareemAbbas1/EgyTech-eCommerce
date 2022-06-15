@@ -319,7 +319,7 @@ const SignUp = (props) => {
           const expireDate = new Date(Date.now() + 1000 * 60 * 60 * 24 * 90);
           const expireString = expireDate.toUTCString();
           //document.cookie = `_egyloggedin=${data.token};${expireString};path=/`; // uncomment to make the cookie
-          navigate("/");
+          props.showLogin();
           return response.status;
         }
       })
