@@ -1,8 +1,11 @@
 import "./custom.scss";
-import "./App.css"
+import "./App.css";
 import NavBar from "./components/navbar/NavBar.js";
-import Home from './components/pages/home/Home.js';
+import Home from "./components/pages/home/Home";
 import Footer from "./components/footer/Footer";
+import AuthPage from "./components/pages/auth/Auth";
+
+
 
 function App() {
   return (
