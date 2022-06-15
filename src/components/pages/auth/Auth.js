@@ -316,10 +316,10 @@ const SignUp = (props) => {
         if (!response.ok) {
           throw response.status;
         } else {
-          const expireDate = new Date(Date.now() + 1000 * 60 * 60 * 24 * 90);
+          /*const expireDate = new Date(Date.now() + 1000 * 60 * 60 * 24 * 90);
           const expireString = expireDate.toUTCString();
-          //document.cookie = `_egyloggedin=${data.token};${expireString};path=/`; // uncomment to make the cookie
-          navigate("/");
+          document.cookie = `_egyloggedin=${data.token};${expireString};path=/`; // uncomment to make the cookie */
+          props.showLogin();
           return response.status;
         }
       })
