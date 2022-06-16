@@ -58,7 +58,7 @@ handleProducts();
     <Row>
         {productsList &&  productsList.map( (prod) => (
            <Col key={prod.id} xs={12} sm md={6} lg={3}>
-             <Link to= '/Products/zpma5agmwdiyv8k8uuk9a' >
+             <Link to={'/products/'+prod.id} >
             <ProductCard key={prod.id} product={prod} rating={<StarRating />} />
             </Link>
           </Col>

@@ -157,8 +157,8 @@
   }
   .tab-list{
       display: flex;
+      margin-bottom: 0;
       margin: 15px;padding: 5px;
-      
      border-bottom:  2px solid #28CC9E;
 
   }

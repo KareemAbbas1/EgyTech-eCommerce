@@ -1,4 +1,4 @@
-import React, {useState, createContext} from "react";
+import React, {useState} from "react";
 import "./custom.scss";
 import "./App.css"
 import NavBar from "./components/navbar/NavBar.js";
@@ -11,30 +11,35 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
+  useParams
 } from "react-router-dom";
 import {PrivateRoute} from './components/privateRoute'
+import OrdersList from './components/pages/orders/OrdersList';
+import CustomersList from './components/pages/customers/Customers';
+import CustomerDetail from './components/pages/customers/CustomerDetail';
 
 function App() {
   const [isLogged, setIsLogged] =useState(false)
- 
+
   return (
     <div className="App">
-      <Router>
            <NavBar  />
-<br />
+
+      <Router>
      <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/Products/zpma5agmwdiyv8k8uuk9a" element={<Product />} />
+      <Route path="/Products/:id" element={<Product />} />
       <Route element={<PrivateRoute isLogged={isLogged} />}>
          <Route path="/cart" element={<ProductsList />} />
       </Route> 
       <Route path="/Products" element={<ProductsList />} />
-
-        <Route path="*" element={<Error />} />
-
+      <Route path="/orders" element={<OrdersList />} />
+      <Route path="/customers" element={<CustomersList />} />
+      <Route path="customers/:userId" element={<CustomerDetail />} />
+      <Route path="*" element={<Error />} />
     </Routes>
+        </Router> 
         <Footer />
-        </Router>
     </div>
   );
 }
