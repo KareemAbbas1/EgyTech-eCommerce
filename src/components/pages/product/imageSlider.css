@@ -1,0 +1,108 @@
+@import "react-slideshow-image/dist/styles.css";
+
+.each-slide>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 31rem;
+    border-radius: 5px;
+}
+
+.each-slide span {
+    padding: 20px;
+    font-size: 20px;
+    background: #efefef;
+    text-align: center;
+}
+
+
+.arrow-right {
+    background: url(../../../../public/assets/rightArrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top: 18.7rem;
+    right: 1.5rem;
+    width: 30px;
+    margin-left: -25px;
+    cursor: pointer;
+}
+
+.arrow-left {
+    background: url(../../../../public/assets/leftArrow.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top: 18.7rem;
+    right: 1.5rem;
+    width: 30px;
+    margin-left: -25px;
+    cursor: pointer;
+}
+
+.arrow:hover {
+    opacity: 50%;
+}
+
+.indicators {
+    margin-left: -1.7rem;
+    display: flex;
+    justify-content: center;
+}
+
+.indicator {
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    border: 1px #666 solid;
+    border-radius: 4px;
+}
+
+.indicator.active {
+    opacity: 50%;
+}
+
+@media (max-width: 990px) {
+
+    .arrow-right {
+        background-size: 30%;
+        top: 18.3rem;
+        right: -1rem;
+    }
+
+    .arrow-left {
+        background-size: 30%;
+        top: 18.4rem;
+        left: -0.6rem;
+    }
+
+    .indicator {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .arrow-right {
+        display: none;
+    }
+
+    .arrow-left {
+       display: none;
+    }
+
+    .indicator {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 0.4rem;
+        margin-left: 0.4rem;
+    }
+}

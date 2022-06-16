@@ -4,21 +4,23 @@ import ShippingBadge from "../../../assets/shipping.png";
 import GuaranteedBadge from "../../../assets/guaranteed.png";
 import WarrantyBadge from "../../../assets/warranty.png";
 import NewArrivals from "./NewArrivals.js"
-import { products } from "../../../utils/_Data";
 import OnSale from "./OnSale";
 import Brands from "./Brands";
 import Testimonials from "./Testimonials";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
-const Home = () => {
+
+const Home = ({ products }) => {
   return (
     <div>
       {/* Banner */}
       <section className='banner d-flex align-items-center'>
         <Container>
           <h1>Leveraging tech to drive <br></br>a better IT experience.</h1>
-          <Button className="shop-now">Shop Now</Button>
+          <Link to="/products">
+            <Button className="shop-now">Shop Now</Button>
+          </Link>
         </Container>
       </section>
 
@@ -58,7 +60,7 @@ const Home = () => {
       </section>
 
       {/* On Sale */}
-      <OnSale products={products}/>
+      <OnSale products={products} />
 
       {/* Brands */}
       <Brands />
@@ -69,4 +71,4 @@ const Home = () => {
   )
 }
 
-export default Home;
+export default Home

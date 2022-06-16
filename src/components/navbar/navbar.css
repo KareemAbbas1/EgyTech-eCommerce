@@ -1,28 +1,38 @@
 .nav {
-  max-height: 1rem;
   width: 100%;
-  padding: 1.7rem;
+  max-height: 1rem;
   position: fixed;
+  padding: 1.7rem;
   z-index: 1000;
   transition-timing-function: ease-in;
   transition: 500ms;
+}
+
+.showNavOnscroll {
+  background-color: #0F1010;
 }
 
 img {
   height: 2.7rem;
 }
 
+
+.home-link{ 
+  display: none;
+}
+
 .nav-links {
-  margin-left: 8vw;
+  margin-left: 8.5vw;
+  margin-top: 0.4rem;
 }
 
 .nav text {
   color: #fff;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-weight: 500;
   text-transform: uppercase;
   padding-top: 1.2rem;
-  padding-bottom: 0.8rem;
+  padding-bottom: 0.9rem;
 }
 
 .nav text:hover {
@@ -31,8 +41,14 @@ img {
   color: #28CC9E;
 }
 
+.nav .active {
+  border-bottom-style: inset;
+  border-bottom-color: #28CC9E;
+  color: #28CC9E;
+}
+
 .login-btn {
-  margin-top: 0.4rem;
+  margin-top: 0.2rem;
   min-width: 6.6rem;
   height: 2rem;
   font-weight: 500;
@@ -46,11 +62,11 @@ img {
 .icons {
   background: none;
   border: none;
-  margin-top: 0.2rem;
+  margin-top: 0.1rem;
 }
 
 .search-bar-show {
-  margin-top: 0.4rem;
+  margin-top: 0.2rem;
   height: 2rem;
   float: right;
   transition-timing-function: ease-in;
@@ -83,13 +99,14 @@ img {
 }
 
 
-.showNavOnscroll {
-  background-color: #0F1010;
-}
 
 /* Responsivity */
 
 @media (max-width: 990px) {
+
+  .home-link {
+    display: inline-block;
+  }
   .offcanvasToggler {
     top: 0;
     left: 0;  
@@ -145,5 +162,11 @@ img {
     top: 2.6rem;
     left: 9rem;
     position: relative;
+  }
+}
+
+@media (min-width: 1400px) {
+  .nav text {
+    margin-left: 1.5vw;
   }
 }

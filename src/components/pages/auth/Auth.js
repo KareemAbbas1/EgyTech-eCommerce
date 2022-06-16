@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../../../assets/Logo.png";
-import background from "../../../assets/auth_bg.png";
+import background from "../../../assets/bg_auth.png";
 
 const AuthPage = () => {
   return (

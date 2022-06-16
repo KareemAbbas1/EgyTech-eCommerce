@@ -1,6 +1,7 @@
-import { Container } from "react-bootstrap";
+import { Container, Button } from "react-bootstrap";
 import ProductCard from "../../product card/ProductCard";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 
 const OnSale = ({ products }) => {
@@ -13,21 +14,21 @@ const OnSale = ({ products }) => {
 
             setTimeout(() => {
 
-                const productsArray = Object.keys(products).map(key => {
+                const productsArray = products && Object.keys(products).map(key => {
                     return products[key];
                 });
 
-                const onSaleProductsArray = productsArray.filter(p => {
+                const onSaleProductsArray = productsArray && productsArray.filter(p => {
                     return p.state === "on sale"
                 });
 
-                const onSaleProducts = onSaleProductsArray.slice(0, 8);
+                const onSaleProducts = onSaleProductsArray && onSaleProductsArray.slice(0, 8);
                 setOnSale(onSaleProducts);
 
             }, 100)
         }
         handleOnSale();
-    }, [])
+    }, [products])
 
     return (
         <section className="mb-5 onSale-section">
@@ -57,6 +58,9 @@ const OnSale = ({ products }) => {
                     </ul>
                 </div>
             </Container>
+            <Link to='/products'>
+                <Button className="show-more-onSale" variant="outline-secondary">Show More</Button>
+            </Link>
         </section>
     )
 }

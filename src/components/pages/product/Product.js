@@ -1,97 +1,208 @@
 import React from 'react';
 import './product.css'
-import ShippingBadge from "../../../assets/shipping.png";
-import GuaranteedBadge from "../../../assets/guaranteed.png";
- import 'bootstrap/dist/css/bootstrap.min.css';
- import {Tabs, Tab,  Row,  Col, Container} from "react-bootstrap";
- //import ProductCard from '../../product card/ProductCard';
- import StarRating from '../../starRating/StarRating ';
- import { BsPlus } from "react-icons/bs";
-
- const Produt =()=>{
-         return (
-             <Container>
-                 <section className='details-container' >
-                 <div className='product-imgs'>
-
-                 </div>
-                     <div className='product-details'>
-                       <h2>Product Name</h2>
-                       <div style={{position: "relative", display: "flex" }}>
-
-                       <StarRating /> 
-                       </div> <br/>
-                        <p style={{color: "rgb(68, 66, 66)"}}> 4 reviews</p>
-                       
-                       <p>Vendor: <span>Legion</span></p>
-                       <p>Availability: <span>10 in stock</span></p>
-                       <p>Product Type: <span>Laptop</span></p>
-                       <br />
-                       <p>Nam tempus turpis at metus scelerisque placerat nulla plas deumantos solicitud felis. 
-                           Pellentesque diam dolor, ele etos  mattis drostique des commodo pharetras...</p>
-                           <p className='price'>$18.99</p>
-                           <p> Color: <span>Black</span></p>
-                           <div className='color' ></div>
-                           <div> 1 <BsPlus />  </div>
-                           <button>Add To Cart</button>
-                           <button>Buy Now </button>
-
-      {/* Badges Section */}
-      <section className="container d-flex align-items-center justify-content-between mt-2 badges-section">
-        <span className="">
-          <img src={ShippingBadge} alt='shipping badge' className="badges" />
-          <span className="ms-3">Fast Shipping & Returns </span>
-        </span>
-
-        <span className="vertical-line"></span>
-
-        <span>
-          <img src={GuaranteedBadge} alt='shipping badge' className="badges" />
-          <span className="ms-3">Lowest Price Guarantee</span>
-
-        </span>
-
-        <span className="vertical-line"></span>
-      </section>
+import { useEffect, useState } from 'react';
+import { Container, Button, Row, Col } from "react-bootstrap";
+import { BsPlus, BsDash } from "react-icons/bs";
+import { useParams } from 'react-router-dom';
+import ImagesSlider from './ImagesSlider';
+// import 'react-tabs/style/react-tabs.css';
+import ReviewCard from './ReviewCard';
+import Rating from '../../Rating';
+import ProductReviews from './ProductReviews';
+import ResponsiveAccordions from './ResponsiveAccordions';
+// import ProductCard from '../../product card/ProductCard';
+import ProductsSlider from '../../ProductsSlider';
 
 
+const Produt = (props) => {
+
+  const products = props.products;
+
+  let { id } = useParams();
+  const [product, setProduct] = useState();
+  const [toggleActiveTab, setToggleActiveTab] = useState(1);
+
+  const [simillarProducts, setSimillarProducts] = useState();
+
+  useEffect(() => {
+
+    const handleOnSale = async () => {
+
+      setTimeout(() => {
+
+        const productsArray = Object.keys(products).map(key => {
+          return products[key];
+        });
+
+        const product = productsArray.find(p => p.id === id);
+        setProduct(product)
+
+      }, 100)
+    }
+    handleOnSale();
+  }, [id, products])
+
+  const name = product && product.name;
+  const rate = product && product.rate;
+  const images = product && product.images;
+  const reviews = product && product.reviews;
+  const brand = product && product.brand;
+  const quantity = product && product.quantity;
+  const type = product && product.type;
+  const description = product && product.description;
+  const price = product && product.price;
+  const color = product && product.color;
+  const productDetails = product && product.productDetails;
+
+  // Handle Simillar Products
+  useEffect(() => {
+    const handleSimillarProducts = async () => {
+
+      setTimeout(() => {
+
+        const productsArray = Object.keys(products).map(key => {
+          return products[key];
+        });
+
+        // eslint-disable-next-line array-callback-return
+        const simillarProductsArray = productsArray && productsArray.filter(p => {
+          if (p.id !== id) {
+            return p.type === type;
+          }
+        });
+        setSimillarProducts(simillarProductsArray);
+
+      }, 100)
+    }
+    handleSimillarProducts();
+
+  }, [products, type, id])
+
+  return (
+    <Container className=''>
+      <Row className='details-container'>
+        <Col lg={8} md={8} sm={12} className='product-imgs'>
+          <ImagesSlider images={images} />
+        </Col>
+        <Col lg={4} md={4} sm={12} className='product-details'>
+          <h2>{name}</h2>
+          <div className='d-flex justify-content-between mt-3'>
+            <Rating rate={rate} reviews={reviews} />
+            <p style={{ color: "rgb(68, 66, 66)" }}> {reviews && reviews.length} reviews</p>
+          </div> <br />
+
+          <p>Brand: <span>{brand}</span></p>
+          <p>Availability: <span>{quantity} in stock</span></p>
+          <p>Product Type: <span>{type}</span></p>
+          <br />
+          <p className='mt-4'>{description}</p>
+          <p className='mt-4'><strong>${price}</strong></p>
+          <p className='mt-4'> Color: <span>{color}</span></p>
+          <div className='color mt-4' style={{ background: `${color}` }}></div>
+          <div style={{ width: '100%' }}>
+            <div className='d-flex justify-content-between mt-5'>
+              <span style={{ width: '48%' }} className='d-flex justify-content-between align-items-center me-2'>
+                <Button variant='outline-primary' style={{ width: '30%' }}>
+                  <span className='d-flex justify-content-between align-items-center'>
+                    <BsDash size={25} />
+                  </span>
+                </Button>
+                <div className='mx-1' style={{ fontSize: '1.7rem', lineHeight: '2.3rem', textAlign: 'center', border: '1px solid #28CC9E', borderRadius: '4px', width: '40%', height: 'auto' }}>1</div>
+                <Button variant='outline-primary' style={{ width: '30%' }}>
+                  <span className='d-flex justify-content-between align-items-center'>
+                    <BsPlus size={25} />
+                  </span>
+                </Button>
+              </span>
+
+              <Button className='add-to-cart' >Add To Cart</Button><br />
+            </div>
+            <Button className='w-100 mt-2' variant='outline-primary text-black'>Buy Now</Button>
+          </div>
+        </Col>
+      </Row>
+
+      {/* Details & Reviews */}
+      <Row className='details-row'>
+        <div className='details-and-reviews-section'>
+
+          <div className='tabs'>
+            <div className={toggleActiveTab === 1 ? 'tab active-tab' : 'tab'}>
+              <button onClick={() => setToggleActiveTab(1)}>
+                <h5>Product Details</h5>
+              </button>
+            </div>
+
+            <div className={toggleActiveTab === 2 ? 'tab active-tab' : 'tab'}>
+              <button onClick={() => setToggleActiveTab(2)}>
+                <h5>Customers Reviews</h5>
+              </button>
+            </div>
+
+            <div className={toggleActiveTab === 3 ? 'tab active-tab' : 'tab'}>
+              <button onClick={() => setToggleActiveTab(3)}>
+                <h5>Shipping & Returns</h5>
+              </button>
+            </div>
+          </div>
+
+          {/* Product Details */}
+          <div className='tabs-content'>
+            <div className={toggleActiveTab === 1 ? 'tab-content active-tab-content' : 'tab-content'}>
+              <p>{productDetails}</p>
+            </div>
+
+            {/* Customers Reviews */}
+            <div
+              className={toggleActiveTab === 2 ? 'tab-content active-tab-content' : 'tab-content'}>
+              <div className='w-100 mb-4'>
+                <Row className='d-flex flex-lg-row-reverse justify-content-lg-between'>
+                  <Col lg={6} md={12} sm={12} className='d-flex justify-content-lg-end justify-content-sm-center'>
+                    <ProductReviews rate={rate} reviews={reviews} />
+                  </Col>
+
+                  <Col lg={6} md={12} sm={12} className='d-flex justify-content-lg-start justify-content-sm-center'>
+                    <ReviewCard reviews={reviews} />
+                  </Col>
+                </Row>
+              </div>
+            </div>
+
+            {/* Shipping & Returns */}
+            <div className={toggleActiveTab === 3 ? 'tab-content active-tab-content' : 'tab-content'}>
+              <p>
+                <h6>RETURNS POLICY</h6>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut blandit risus. Donec mollis nec tellus et rutrum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut consequat quam a purus faucibus scelerisque. Mauris ac dui ante. Pellentesque congue porttitor tempus. Donec sodales dapibus urna sed dictum. Duis congue posuere libero, a aliquam est porta quis.
+
+                Donec ullamcorper magna enim, vitae fermentum turpis elementum quis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+
+                Curabitur vel sem mi. Proin in lobortis ipsum. Aliquam rutrum tempor ex ac rutrum. Maecenas nunc nulla, placerat at eleifend in, viverra etos sem. Nam sagittis lacus metus, dignissim blandit magna euismod eget. Suspendisse a nisl lacus. Phasellus eget augue tincidunt, sollicitudin lectus sed, convallis desto. Pellentesque vitae dui lacinia, venenatis erat sit amet, fringilla felis. Nullam maximus nisi nec mi facilisis.
+                <br /><br />
+
+                <h6>SHIPPING</h6>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ut blandit risus. Donec mollis nec tellus et rutrum. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut consequat quam a purus faucibus scelerisque. Mauris ac dui ante. Pellentesque congue porttitor tempus. Donec sodales dapibus urna sed dictum. Duis congue posuere libero, a aliquam est porta quis.
+
+                Donec ullamcorper magna enim, vitae fermentum turpis elementum quis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+
+                Curabitur vel sem mi. Proin in lobortis ipsum. Aliquam rutrum tempor ex ac rutrum. Maecenas nunc nulla, placerat at eleifend in, viverra etos sem. Nam sagittis lacus metus, dignissim blandit magna euismod eget. Suspendisse a nisl lacus. Phasellus eget augue tincidunt, sollicitudin lectus sed, convallis desto. Pellentesque vitae dui lacinia, venenatis erat sit amet, fringilla felis. Nullam maximus nisi nec mi facilisis.
+
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className='responsive-accordions'>
+          <ResponsiveAccordions productDetails={productDetails} rate={rate} reviews={reviews} />
+        </div>
+      </Row>
+
+      {/* Simillar Products */}
+      <Row className='mb-5' style={{ borderTop: '1px solid #9d9d9d' }}>
+        <h4 className='mt-5'>Simillar Products</h4>
+        <ProductsSlider products={simillarProducts} />
+      </Row>
+    </Container>
+  );
+}
 
 
-                     </div>
-
-                
-                 </section>
-
-
-
-                 <secion>
-                 <Row>
-                     <Col>
-                         <Tabs defaultActiveKey="Details" 
-                               id="uncontrolled-tab-example" className="mb-3">
-                               
-                             <Tab eventKey="Details" title="Product Details">
-                                 <h3>11111111</h3>
-                                 <p>Nam tempus turpis at metus scelerisque placerat nulla plas deumantos solicitud felis. Pellentesque diam dolor, ele etos  mattis drostique des commodo pharetras placerat nulla plas deumantos solicitud felis. Pellentesque diam dolor, ele etos  mattis drostique des commodo  etos  mattis drostique des commodo
-                                     etos  mattis drostique des commodo</p>
-                             </Tab>
-                             <Tab eventKey="Reviews" title="Customer Reviews">
-                                <h3>2222222</h3>
-                                <p>Nam tempus turpis at metus scelerisque placerat nulla plas deumantos solicitud felis. Pellentesque diam dolor, ele etos  mattis drostique des commodo pharetras placerat nulla plas deumantos solicitud felis. Pellentesque diam dolor, ele etos  mattis drostique des commodo  etos  mattis drostique des commodo
-                                       etos  mattis drostique des commodo</p>
-                             </Tab>
-                             <Tab eventKey="Shipping" title="Shipping & Returns" >
-                                <h3>333333333333</h3>   
-                                <p>Nam tempus turpis at metus scelerisque placerat nulla plas deumantos solicitud felis. Pellentesque diam dolor, ele etos  mattis drostique des commodo pharetras placerat nulla plas deumantos solicitud felis. Pellentesque diam dolor, ele etos  mattis drostique des commodo  etos  mattis drostique des commodo
-                                     etos  mattis drostique des commodo</p>                       
-                            </Tab>
-                         </Tabs>
-                     </Col>
-                 </Row>
-                 </secion>
-             </Container>
-         );
-     }
- 
- 
- export default Produt;
+export default Produt;

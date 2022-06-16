@@ -1,9 +1,10 @@
-import './footer.css';
+import "./footer.css";
 import { Container, Button, Image } from 'react-bootstrap';
 import logo from "../../assets/Logo.png";
 import facebook from "../../assets/facebook.png";
 import instagram from "../../assets/instagram.png";
 import twitter from "../../assets/twitter.png";
+import { Link } from 'react-router-dom';
 
 
 const Footer = () => {
@@ -11,7 +12,7 @@ const Footer = () => {
         <section className="footer">
             <Container fluid className='px-md-5 pt-5'>
                 <span className='d-flex justify-content-between mb-4'>
-                    <img src={logo} alt='logo image'></img>
+                    <img src={logo} alt='logo'></img>
                     <span className='d-flex justify-content-between '>
                         <span>
                             <table>
@@ -25,15 +26,15 @@ const Footer = () => {
 
                                 <tbody>
                                     <tr>
-                                        <td className='table-data first-row'><a href='#'>Mobile Phones</a></td>
-                                        <td className='table-data first-row'><a href='#'>About us</a></td>
+                                        <td className='table-data first-row'><Link to="/products">Mobile Phones</Link></td>
+                                        <td className='table-data first-row'><Link to="/about-us">About us</Link></td>
                                     </tr>
                                     <tr>
-                                        <td className='table-data'><a href='#'>Computers</a></td>
-                                        <td className='table-data'><a href='#'>Contact us</a></td>
+                                        <td className='table-data'><Link to="/products">Computers</Link></td>
+                                        <td className='table-data'><Link to="/contact-us">Contact us</Link></td>
                                     </tr>
                                     <tr>
-                                        <td className='table-data'><a href='#'>Tablets</a></td>
+                                        <td className='table-data'><Link to="/products">Tablets</Link></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -46,11 +47,11 @@ const Footer = () => {
                 </span>
             </Container>
 
-            <div></div>
+            {/* <div></div> */}
 
             <Container fluid className='px-md-5'>
                 <span className='d-flex justify-content-between pb-3 mt-2'>
-                    <p className='copy-rights'>All Content Copyright, Rights Reserved</p>
+                    <p className='copy-rights'>All Design Copyright, Rights Reserved to <a href='https://www.linkedin.com/in/kareem-abbas-715868210/' target="_blank" rel='noreferrer'>Kareem Abbas</a></p>
                     <span className='d-flex justify-content-between'>
                         <p className='follow-us'>Follow us:</p>
                         <span className='d-flex justify-content-between'>

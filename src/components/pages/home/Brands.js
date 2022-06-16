@@ -1,4 +1,4 @@
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import { brands } from "../../../utils/_Data";
 import { useState, useEffect } from "react";
 
@@ -33,8 +33,8 @@ const Brands = () => {
             const currentBrandImages = brands[key].images;
             setImages(currentBrandImages);
           }
-        });
-        return
+        },);
+        return imagesArray;
 
       }, 100)
     };
@@ -61,11 +61,11 @@ const Brands = () => {
         </div>
 
         <div className="grid">
-          <div className="brand-image1"><img src={images && images[0]} className="brand-image" /></div>
-          <div className="brand-image2"><img src={images && images[1]} className="brand-image" /></div>
-          <div className="brand-image3"><img src={images && images[2]} className="brand-image" /></div>
-          <div className="brand-image4"><img src={images && images[3]} className="brand-image" /></div>
-          <div className="brand-image5"><img src={images && images[4]} className="brand-image" /></div>
+          <div className="brand-image1"><img src={images && images[0]} className="brand-image" alt="product" /></div>
+          <div className="brand-image2"><img src={images && images[1]} className="brand-image" alt="product" /></div>
+          <div className="brand-image3"><img src={images && images[2]} className="brand-image" alt="product" /></div>
+          <div className="brand-image4"><img src={images && images[3]} className="brand-image" alt="product" /></div>
+          <div className="brand-image5"><img src={images && images[4]} className="brand-image" alt="product" /></div>
         </div>
 
       </Container>
