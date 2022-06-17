@@ -42,7 +42,9 @@ const AuthContainer = () => {
       {visibleForm == "signup" ? (
         <SignUp
           showLogin={(e) => {
+            if(e) {
             e.preventDefault();
+            }
             show("login");
           }}
         />
@@ -242,7 +244,6 @@ const SignUp = (props) => {
   const [isDisabled, setDisabled] = useState(true);
   const [isEmailExist, toggleEmailFeedback] = useState(false);
   const [isSubmitting, toggleSubmitting] = useState(false);
-  const navigate = useNavigate();
   const [nameValidation, validateName] = useState({
     validationStyle: "",
     isValid: false,
