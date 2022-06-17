@@ -114,7 +114,7 @@ const Login = (props) => {
       .then((data) => {
         const expireDate = new Date(Date.now() + 1000 * 60 * 60 * 24 * 90);
         const expireString = expireDate.toUTCString();
-        //document.cookie = `_egyloggedin=${data.token};${expireString};path=/`; // uncomment to make the cookie
+        document.cookie = `_egyloggedin=${data.token};${expireString};path=/`;
         navigate("/");
       })
       .catch((error) => {
