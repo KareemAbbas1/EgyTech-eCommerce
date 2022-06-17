@@ -21,6 +21,7 @@ function App() {
         <ScrollToTop />
         <NavBar />
         <Routes>
+          <Route path="/auth" element={<AuthPage />} />
           <Route path="/" element={<Home products={products} />} />
           <Route path="/products" element={<ProductsList products={products} />} />
           <Route path="/products/:id" element={<Produt products={products} />} />
